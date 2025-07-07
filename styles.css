@@ -1,0 +1,162 @@
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-color: #D7A989;
+    --secondary-color: #A68A75;
+    --tertiary-color: #E6DAD2;
+    --quartiary-color: #8C5E58;
+
+    --bg-color-1: #FAF7F5;
+    --bg-color-2: #F1E3DB;
+
+    --paragraph: #2F2F2F;
+    --paragraph-2: #F2F2F2;
+
+    font-size: 62.5%;
+
+    --nav-height: 7.2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.6rem;
+    text-align: center;
+
+    overflow: overlay;
+
+    background-color: var(--bg-color-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn-contato {
+    background: var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
+
+    margin-bottom: 6rem;
+    padding: 1.4rem 2rem;
+
+    width: fit-content;
+
+    color: var(--bg-color-1);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    position: relative;
+
+    transition: 400ms;
+}
+
+.btn-contato:hover {
+    color: var(--primary-color);
+    background: var(--bg-color-1);
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+/* NAVBAR */
+nav {
+    width: 100vw;
+    height: var(--nav-height);
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* INICIO */
+#inicio {
+    height: 100vh;
+    min-height: calc(60rem + var(--nav-height));
+    padding-block: 0;
+
+    background: var(--bg-color-2);
+
+    display: flex;
+    align-items: center;
+}
+
+#inicio ul {
+    
+}
+
+/* SOBRE */
+
+
+
+/* SERVIÇOS */
+
+
+/* PORTIFÓLIO */
+
+
+/* DEPOIMENTOS */
+
+
+/* CONTATO */
+#contato {
+    background-color: var(--bg-color-2);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--bg-color-2);
+    color: var(--paragraph);
+}
+
+footer .wrapper {
+    padding-block: 0.8rem;
+    border-top: 0.1rem solid var(--paragraph);
+}
+
+footer p {
+    line-height: 0.6;
+    font-size: 1rem;
+    
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
+}
